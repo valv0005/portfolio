@@ -6,142 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Portfolio</title>
 </head>
 <body>
+    <div class="wrapper">
      <!--1. Header area-->
-     <header>
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/logo--colour202x101.png"
+                                        media="(min-width: 1280px)" />
+                            
+                                <source srcset="images/logo--colour160x80.png"
+                                        media="(min-width: 768px)" />
+                            
+                                <source srcset="images/logo--colour160x80.png"
+                                        media="(min-width: 375px)" />
+                                <img class="orig-img"
+                                src="images/logo--colour202x101.png"
+                                alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                            <li class="item"><a href="index.html" class="home">Home</a></li>
+                            <li class="item"><a href="#about" class="about">About</a></li>
+                            <li class="item"><a href="#services" class="services">Projects</a></li>
+                            <li class="item"><a href="#contact" class="contact">Contact</a></li>       
+                    </ul>
+                </nav>
+            </div>
+        </header><!--End 1. Header area-->
+        <main>
+            <section class="welcome">
+                <div class="container">
                     <picture>
-                        <source srcset="images/logo--colour202x101.png"
+                        <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_1200.png"
                                 media="(min-width: 1280px)" />
                     
-                        <source srcset="images/logo--colour160x80.png"
+                        <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_728.png"
                                 media="(min-width: 768px)" />
                     
-                        <source srcset="images/logo--colour160x80.png"
+                        <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_335.png"
                                 media="(min-width: 375px)" />
                     
                         <img class="orig-img"
-                             src="images/logo--colour202x101.png"
-                             alt="logo">
+                            src="images/mockup-3-devices-good.png"
+                            alt="Mockup three devices for recyclore">
+                    </picture>
+                    <h1>Welcome</h1>
+                    <p>Thanks for visiting my website. 
+                        This website shows some of the 
+                        technical skills put into academic 
+                        projects. 
+                        <br>Please be my guess to explore the 
+                        Projects page, where you can find 
+                        my portfolio. </p>
+                </div>
+            </section>
+            <section class="recommendations">
+                <div class="container-recom">
+                    <div class="container-recom-1">
+                        <h2>Recommendations</h2>
+                        <p class="p-quote">"Amalia is an excellent professional committed to her goals and her career. She is enthusiastic about her work and a person who can be trusted and who is always willing to support. 
+                        <br>It has been a pleasure for me to work and collaborate with her and I highly recommend her." </p>
+                        <p class="p-name">Ruben Farias
+                            <br>–IT Process Consultant Manager (COBIT Certified–ITIL) at Banregio</p>
+                    </div>
+                    <div class="container-recom-2">
+                        <picture>
+                            <source srcset="images/circle321.png"
+                                        media="(min-width: 1280px)" />
+                            
+                            <source srcset="images/circle216.png"
+                                        media="(min-width: 768px)" />
+                            
+                            <source srcset="images/circle216.png"
+                                        media="(min-width: 375px)" />
+                            
+                            <img class="orig-img"
+                                    src="images/RF.png"
+                                    alt="name initials RF">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <section class="banner">
+                <div class="container">
+                    <div class="container-banner">
+                        <h2>Responsive. Design. Accessible. All in a website.</h2>
+                        <p>Looking for a better User Experience for your webpage. </p>
+                        <button type="button" class="button">Get a web contrast color evaluation</button>
+                    </div>
+                    <picture>
+                        <source srcset="images/contrast_w520.png"
+                                    media="(min-width: 1280px)" />
+                        
+                        <source srcset="images/contrast_w335.png"
+                                    media="(min-width: 768px)" />
+                        
+                        <source srcset="images/contrast_w335.png"
+                                    media="(min-width: 375px)" />
+                        
+                        <img class="orig-img"
+                                src="images/contrast_w520.png"
+                                alt="contrast colour example do and dont">
                     </picture>
                 </div>
-                <ul class="nav-list">
-                        <li class="item"><a href="#home" class="home">Home</a></li>
-                        <li class="item"><a href="#about" class="about">About</a></li>
-                        <li class="item"><a href="#services" class="services">Projects</a></li>
-                        <li class="item"><a href="#contact" class="contact">Contact</a></li>       
-                </ul>
-            </nav>
-        </div>
-    </header><!--End 1. Header area-->
-    <main>
-        <section class="welcome">
-            <div class="container">
-                <picture>
-                    <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_1200.png"
-                            media="(min-width: 1280px)" />
-                
-                    <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_728.png"
-                            media="(min-width: 768px)" />
-                
-                    <source srcset="images/mockup-3-devices-good_yb5j4l_c_scale,w_335.png"
-                            media="(min-width: 375px)" />
-                
-                    <img class="orig-img"
-                         src="images/mockup-3-devices-good.png"
-                         alt="Mockup three devices for recyclore">
-                </picture>
-                <h1>Welcome</h1>
-                <p>Thanks for visiting my website. 
-                    This website shows some of the 
-                    technical skills put into academic 
-                    projects. 
-                    Please be my guess to explore the 
-                    Projects page, where you can find 
-                    my portfolio. </p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-inner-left">
+                        <p>Copyright © 2022 Amalia Valverde </p>
+                    </div>
+                    <div class="footer-inner-right">
+                        <a href="#" class="social-text">LinkedIn</a>
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/107159_circle_linkedin_icon50px.png"
+                                            media="(min-width: 1280px)" />
+                                
+                                <source srcset="images/107159_circle_linkedin_icon44px.png"
+                                            media="(min-width: 768px)" />
+                                
+                                <source srcset="images/107159_circle_linkedin_icon44px.png"
+                                            media="(min-width: 375px)" />
+                                
+                                <img class="orig-img"
+                                src="images/107159_circle_linkedin_icon44px.png"
+                                alt="LinkedIn logo">
+                            </picture>
+                        </a>
+                        <a href="#" class="social-text">Behance</a>
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/104426_behance_portfolio_icon50px.png"
+                                            media="(min-width: 1280px)" />
+                                
+                                <source srcset="images/104426_behance_portfolio_icon44px.png"
+                                            media="(min-width: 768px)" />
+                                
+                                <source srcset="images/104426_behance_portfolio_icon44px.png"
+                                            media="(min-width: 375px)" />
+                            
+                                <img class="orig-img-b" src="images/104426_behance_portfolio_icon44px.png" alt="behance logo">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="recommendations">
-            <div class="container">
-                <h2>Recommendations</h2>
-                <p>"Amalia is an excellent professional committed to her goals and her career. She is enthusiastic about her work and a person who can be trusted and who is always willing to support. 
-                It has been a pleasure for me to work and collaborate with her and I highly recommend her." </p>
-                <p>Ruben Farias
-                    – IT Process Consultant Manager (COBIT 
-                    Certified – ITIL) at Banregio</p>
-                <picture>
-                    <source srcset="images/circle321.png"
-                                media="(min-width: 1280px)" />
-                    
-                    <source srcset="images/circle216.png"
-                                media="(min-width: 768px)" />
-                    
-                    <source srcset="images/circle216.png"
-                                media="(min-width: 375px)" />
-                    
-                    <img class="orig-img"
-                             src="images/RF.png"
-                             alt="name initials RF">
-                </picture>
-            </div>
-        </section>
-        <section class="banner">
-            <div class="container">
-                <h2>Responsive. Design. Accessible. All in a website.</h2>
-                <p>Looking for a better User Experience for your webpage. </p>
-                <button type="button" class="button">Get a web contrast color evaluation</button>
-                <picture>
-                    <source srcset="images/contrast_w520.png"
-                                media="(min-width: 1280px)" />
-                    
-                    <source srcset="images/contrast_w335.png"
-                                media="(min-width: 768px)" />
-                    
-                    <source srcset="images/contrast_w335.png"
-                                media="(min-width: 375px)" />
-                    
-                    <img class="orig-img"
-                             src="images/contrast_w520.png"
-                             alt="contrast colour example do and dont">
-                </picture>
-            </div>
-        </section>
-    </main>
-    <footer>
-        
-        <p>Copyright © 2022 Amalia Valverde </p>
-        <picture>
-            <source srcset="images/107159_circle_linkedin_icon50px.png"
-                        media="(min-width: 1280px)" />
-            
-            <source srcset="images/107159_circle_linkedin_icon44px.png"
-                        media="(min-width: 768px)" />
-            
-            <source srcset="images/107159_circle_linkedin_icon44px.png"
-                        media="(min-width: 375px)" />
-            
-            <img class="orig-img"
-                     src="images/107159_circle_linkedin_icon50px.png"
-                     alt="LinkedIn logo">
-        </picture>
-        <picture>
-            <source srcset="images/104426_behance_portfolio_icon50px.png"
-                        media="(min-width: 1280px)" />
-            
-            <source srcset="images/104426_behance_portfolio_icon44px.png"
-                        media="(min-width: 768px)" />
-            
-            <source srcset="images/104426_behance_portfolio_icon44px.png"
-                        media="(min-width: 375px)" />
-            
-            <img class="orig-img"
-                     src="104426_behance_portfolio_icon50px.png"
-                     alt="Behance logo">
-        </picture>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
