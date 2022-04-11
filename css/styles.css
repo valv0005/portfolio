@@ -231,7 +231,7 @@ footer p {
 @media only screen and (min-width: 768px) {
     .wrapper {
         width: 768px;
-        margin: auto;
+        margin: 0 auto;
     }
 
     .navbar {
@@ -528,3 +528,89 @@ footer p {
         margin-right: 32px;
     }
 }
+
+/* ::::::::::::::::::::::::::::: About :::::::::::::::::::::::::::::*/
+
+.nav-list {
+    margin-bottom: 0;
+}
+.about .container  {
+    margin-top: 0;
+}
+
+.about .container picture img {
+    margin-bottom: 20px;
+}
+
+.about .container h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about .container p {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+
+.about .container:last-child p{
+    margin-top: 20px;
+}
+
+.intro .container p {
+    text-align: center;
+}
+
+.intro picture img {
+    margin-bottom: 20px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    .about .container {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .about .container h1 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .about .container p{
+        font-size: 39px;
+        font-weight: 300;
+    }
+
+    .intro picture img {
+        display: flex;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .navbar {
+        margin-bottom: 40px;
+    }
+
+    .about .container .left {
+        margin-right: 40px;
+    }
+
+    .about .container .right p {
+        font-size: 60px;
+    }
+
+    .intro picture img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}
+
+/* ::::::::::::::::::::::::::::: Ends About :::::::::::::::::::::::::::::*/
