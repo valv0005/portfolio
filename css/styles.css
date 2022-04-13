@@ -372,6 +372,7 @@ footer p {
     }
 
     .navbar {
+        background-color: goldenrod;
         display: flex;
         height: 81px;
     }
@@ -388,14 +389,16 @@ footer p {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        flex-basis: 78%;
+        flex-basis: 82%;
         gap: 2px;
         height: 60px;
         margin-top: 22px;
+        background-color: turquoise;
     }
 
     .container {
         margin: 20px 80px 20px 80px;
+        background-color: teal;
     }
 
     .recommendations {
@@ -614,3 +617,123 @@ footer p {
 }
 
 /* ::::::::::::::::::::::::::::: Ends About :::::::::::::::::::::::::::::*/
+
+/*+++++++++++++++++++++++++++++++Projects ++++++++++++++++++++++++++++++++*/
+
+.projects h1 {
+    margin-bottom: 28px;
+    background-color: #FF7A69;
+}
+
+.projects .container {
+    background-color: blueviolet;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.layer-0 {
+    background-color: rgba(194,223,227,0.7);
+    height: 444px;
+    width: 335px;
+    position: absolute;
+    text-align: center;
+}
+
+.layer {
+    background-color: rgba(194,223,227,0.7);
+    height: 221px;
+    width: 335px;
+    position: absolute;
+    text-align: center;
+}
+
+.project-col h2 {
+    width: 100%;
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .projects h1 {
+        margin-top: 28px;
+        margin-bottom: 28px;
+        background-color: #FF7A69;
+    }
+
+    .projects .container {
+        background-color: blueviolet;
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;        
+    }
+
+    .projects .container .project-col:nth-child(1){
+        grid-column: 1/ span 1;
+        grid-row: 1 /span 2;
+    }
+
+    .projects .container .project-col:nth-child(2){
+        grid-column: 2/ span 1;
+        grid-row: 1 /span 1;
+    }
+
+    .projects .container .project-col:nth-child(3){
+        grid-column: 2/ span 1;
+        grid-row: 2 /span 1;
+    }
+
+    .layer-0 {
+        background-color: rgba(194,223,227,0.7);
+        height: 467px;
+        width: 351px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .layer {
+        background-color: rgba(194,223,227,0.7);
+        height: 221px;
+        width: 351px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .projects .container .project-col picture img {
+        margin: 0;
+    }
+
+
+}
+    
+@media only screen and (min-width: 1280px) {
+    .projects .container {
+        width: 1120px;
+        background-color: blueviolet;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;        
+    }
+
+    .layer-0 {
+        background-color: rgba(194,223,227,0.7);
+        height: 720px;
+        width: 540px;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .layer {
+        background-color: rgba(194,223,227,0.7);
+        height: 340px;
+        width: 540px;
+        position: absolute;
+        text-align: center;
+}
+
+
+/*+++++++++++++++++++++++++++++++End Projects ++++++++++++++++++++++++++++++++*/
