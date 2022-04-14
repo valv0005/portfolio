@@ -710,13 +710,18 @@ footer p {
 }
     
 @media only screen and (min-width: 1280px) {
+    .projects h1 {
+        margin-bottom: 40px;
+    }
+
     .projects .container {
         width: 1120px;
         background-color: blueviolet;
         display: grid;
         grid-gap: 40px;
         grid-template-columns: auto auto;
-        grid-template-rows: auto auto;        
+        grid-template-rows: auto auto;   
+        margin-bottom: 40px;     
     }
 
     .layer-0 {
@@ -739,6 +744,10 @@ footer p {
 /*+++++++++++++++++++++++++++++++End Projects ++++++++++++++++++++++++++++++++*/
 
 /*::::::::::::::::::::::::::::::::::Prototype:::::::::::::::::::::::::::::::*/
+
+.prototype h1 {
+    margin-bottom: 40px;
+}
 
 .prototype .container{
     display: flex;
@@ -809,6 +818,7 @@ footer p {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin-bottom: 40px;
     }
 
     .prototype .container .prototype-col {
@@ -841,3 +851,122 @@ footer p {
 }
 
 /*::::::::::::::::::::::::::::::::::Ends Prototype:::::::::::::::::::::::::::::::*/
+
+/*------------------------------------Paper ----------------------------------*/
+
+.mySlides {
+    display:none;
+}
+
+.w3-display-container{
+    background-color: orange;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 250px;
+    margin-bottom: 29px;
+}
+
+.button-circle {
+    position: absolute;
+    bottom:4%;
+    left: 77%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.w3-black {
+    background-color: #FF7A69;
+    color: #1A1B41;
+    width: 32.46px;
+    height: 32.46px;
+    border-radius: 100px;
+    border: none;
+    font-size: 22px;
+    font-weight: bold;
+    align-items: center;
+    padding: 0;
+}
+
+.w3-black:hover{
+    background-color: #1A1B41;
+    color: #FF7A69;
+}
+
+.container p{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .paper h1 {
+        margin-bottom: 15px;
+    }
+
+    .paper .container .w3-display-container .mySlides picture img {
+        margin: 0;
+    }
+
+    .w3-display-container{
+        background-color: orange;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 261px;
+        margin-bottom: 25px;
+    }
+
+    .button-circle {
+        position: absolute;
+        bottom:4%;
+        left: 84%;
+    }
+
+    .w3-black {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .paper h1 {
+        margin-bottom: 23px;
+    }
+
+    .paper .container {
+        margin-bottom: 30px;
+    }
+
+    .w3-display-container{
+        background-color: orange;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 402px;
+        margin-bottom: 40px;
+    }
+
+    .w3-black {
+        background-color: #FF7A69;
+        color: #1A1B41;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 0;
+    }
+
+    .button-circle {
+        position: absolute;
+        bottom:6%;
+        left: 84%;
+    }
+}

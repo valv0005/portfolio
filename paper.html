@@ -42,55 +42,79 @@
             </div>
         </header><!--End 1. Header area-->
         <main>
-           <section class="prototype">
-               <h1>Prototype</h1>
+           <section class="paper">
+               <h1>Paper</h1>
                <div class="container">
-                   <div class="prototype-col">
-                       <div class="layer">   
-                       </div>
-                        <picture>
-                            <source srcset="images/paper_prototype_w500x500.jpg"
-                                    media="(min-width: 1280px)" />
-                        
-                            <source srcset="images/paper_prototype_w324x323.jpg"
-                                    media="(min-width: 768px)" />
-                        
-                            <source srcset="images/paper_prototype_w335x323.jpg"
-                                    media="(min-width: 375px)" />
-                        
-                            <img class="orig-img"
+                    <div class="w3-content w3-display-container">
+                        <div class="w3-display-container mySlides">
+                            <picture>
+                                <source srcset="images/paper_prototype_w1120x402.jpg"
+                                        media="(min-width: 1280px)" />
+                            
+                                <source srcset="images/paper_prototype_w727x261.jpg"
+                                        media="(min-width: 768px)" />
+                            
+                                <source srcset="images/paper_prototype_w335x250.jpg"
+                                        media="(min-width: 375px)" />
+                                <img class="orig-img"
                                 src="images/paper_prototype.jpeg"
-                                alt="Paper prototype homepage">
-                        </picture>
-                        <div class="blue-block">
-                            <h2>Paper</h2>
-                            <p>High-Fidelity Paper Prototype home page Amalia's website</p>
-                            <a href="paper.html">VIEW PROJECT &#8594;</a>
+                                alt="Paper prototype">
+                            </picture>
+                        </div>
+                        
+                        <div class="w3-display-container mySlides">
+                            <picture>
+                                <source srcset="images/paper_prototype-2_w1120x402.jpg"
+                                        media="(min-width: 1280px)" />
+                            
+                                <source srcset="images/paper_prototype-2_w727x261.jpg"
+                                        media="(min-width: 768px)" />
+                            
+                                <source srcset="images/paper_prototype-2_w335x250.jpg"
+                                        media="(min-width: 375px)" />
+                                <img class="orig-img"
+                                src="images/paper_prototype-2.jpeg"
+                                alt="Paper prototype">
+                            </picture>
+                        </div>
+                        <div class="button-circle">
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
                         </div>
                     </div>
-                    <div class="prototype-col">
-                        <div class="layer">    
-                        </div>
-                        <picture>
-                            <source srcset="images/high-fidelity_w500x500.jpg"
-                                    media="(min-width: 1280px)" />
+                    <p>A piece of paper, a pen, an eraser, 
+                        and a ruler is just what you need to 
+                        start the sketches for a new 
+                        project. However, it is 
+                        indispensable to do previous user 
+                        research. Business and user goals 
+                        matter when designing a website. 
+                        For this project, I considered all the 
+                        elements in the Creative Brief 
+                        document. Looks very easy, but it 
+                        takes hours to get the desired 
+                        design. 
+                        Sketching a project deserves 
+                        attention to detail. </p>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
                         
-                            <source srcset="images/high-fidelity_w324x323.jpg"
-                                    media="(min-width: 768px)" />
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
                         
-                            <source srcset="images/high-fidelity_w335x323.jpg"
-                                    media="(min-width: 375px)" />
-                        
-                            <img class="orig-img"
-                                src="images/high-fidelity.jpg"
-                                alt="High-Fidelity Digital Prototype project in Adobe XD">
-                        </picture>
-                         <div class="blue-block">
-                             <h2>Digital</h2>
-                             <p>High-Fidelity Digital Prototype in Adobe XD.</p>
-                             <a href="#">VIEW PROJECT &#8594;</a>
-                         </div>
-                     </div>
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
                </div>
            </section>
         </main>
