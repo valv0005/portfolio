@@ -360,9 +360,6 @@ footer p {
         color: #FDFDFD;
         margin-right: 20px;
     }
-    
-
-
 }
 
 @media only screen and (min-width: 1280px) {
@@ -372,7 +369,6 @@ footer p {
     }
 
     .navbar {
-        background-color: goldenrod;
         display: flex;
         height: 81px;
     }
@@ -393,12 +389,10 @@ footer p {
         gap: 2px;
         height: 60px;
         margin-top: 22px;
-        background-color: turquoise;
     }
 
     .container {
         margin: 20px 80px 20px 80px;
-        background-color: teal;
     }
 
     .recommendations {
@@ -622,11 +616,9 @@ footer p {
 
 .projects h1 {
     margin-bottom: 28px;
-    background-color: #FF7A69;
 }
 
 .projects .container {
-    background-color: blueviolet;
     display: grid;
     grid-gap: 20px;
 }
@@ -660,11 +652,9 @@ footer p {
     .projects h1 {
         margin-top: 28px;
         margin-bottom: 28px;
-        background-color: #FF7A69;
     }
 
     .projects .container {
-        background-color: blueviolet;
         display: grid;
         grid-gap: 25px;
         grid-template-columns: auto auto;
@@ -716,7 +706,6 @@ footer p {
 
     .projects .container {
         width: 1120px;
-        background-color: blueviolet;
         display: grid;
         grid-gap: 40px;
         grid-template-columns: auto auto;
@@ -859,7 +848,6 @@ footer p {
 }
 
 .w3-display-container{
-    background-color: orange;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -908,7 +896,6 @@ footer p {
     }
 
     .w3-display-container{
-        background-color: orange;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -940,7 +927,6 @@ footer p {
     }
 
     .w3-display-container{
-        background-color: orange;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -992,7 +978,10 @@ footer p {
 form {
     display: flex;
     flex-direction: column;
-    margin: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }
 
 #fname {
@@ -1021,11 +1010,11 @@ form .button {
     margin-bottom: 0;
 }
 
-@arrowColor: #ffcc00;
-@arrow: escape('@{arrowColor}'); 
+/* @arrowColor: #ffcc00;
+@arrow: escape('@{arrowColor}');  */
 
 form select {
-    background-color:#1F99CD;
+    background-color:#C2DFE3;
     background-image: url("/images/expand_more_black_24dp.svg");
     background-position: right 10px center;
     background-repeat: no-repeat;
@@ -1038,7 +1027,6 @@ form select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    width: 302px;
 }
 
 select::-ms-expand {
@@ -1051,7 +1039,6 @@ form option {
     font-family: 'Urbanist', sans-serif;
     color: #0D0D0D;
     padding-right: 14px;
-    width: 302px;
 }
 
 
@@ -1073,7 +1060,152 @@ form option {
 
 .contact .container form textarea {
     border: 2px solid #C2DFE3;
+    height: 182px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    form {
+        margin-top: 24px;
+        margin-left: 103px;
+        margin-right: 103px;
+        margin-bottom: 35px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px){
+    form {
+        margin-top: 37px;
+        margin-left: 160px;
+        margin-right: 160px;
+        margin-bottom: 36px;
+    }
+
+    .contact .container form label {
+        font-size: 24px;
+    }
+
+    .contact .container form input {
+        height: 80px;
+        padding: 0 auto;
+        align-content: center;
+    }
+
+    form .button {
+        width: 121px;
+        height: 60px;
+        font-size: 24px;
+        text-align: center;
+        padding: 17px 22px;
+    }
+
+    form option {
+        font-size: 24px;
+    }
+
+    .contact .container form textarea {
+        height: 280px;
+    }
+
+    ::placeholder {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    #fname {
+        padding-top: 10px;
+        padding-left: 22px;
+    }
+
+    #subject {
+        padding-left: 22px;
+        font-size: 24px;
+        height: 80px;
+    }
+
+    #lemail{
+        padding-top: 10px;
+        padding-left: 22px;
+    }
+
+    #message {
+        padding-left: 22px;
+        padding-top: 28px;
+    }
 
 }
 
 /*"""""""""""""""""""""""""""End Contact """""""""""""""""""""""""""""""""""""""*/
+
+
+/* ::::::::::::::::::::::::::::::::::::::Thank you::::::::::::::::::::::::::::::::::*/
+
+.contact-1 .container {
+    border: 2px solid #FF7A69;
+}
+
+.contact-1 .container .box {
+    width: 302px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+
+.contact-1 .container .box p{
+    font-size: 15px;
+}
+
+.contact-1 .container h2 {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 768px){
+    .contact-1 .container .box {
+        width: 490px;
+        margin-left: 118px;
+        margin-right: 118px;
+        margin-bottom: 33px;
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-1 .container .box p{
+        font-size: 22px;
+    }
+
+    .contact-1 .container h2 {
+        font-size: 62px;
+        margin-bottom: 17px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .contact-1 .container .box {
+        width: 758px;
+        margin-left: 182px;
+        margin-right: 182px;
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+
+    .contact-1 .container .box picture img {
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .contact-1 .container h2 {
+        font-size: 96px;
+        margin-bottom: 26px;
+    }
+
+    .contact-1 .container .box p{
+        font-size: 34px;
+    }
+}
+
+/* :::::::::::::::::::::::::::::::::::End Thank you::::::::::::::::::::::::::::::::::*/
