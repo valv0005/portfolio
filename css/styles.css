@@ -295,7 +295,7 @@ footer p {
 
     .container-recom-2 {
         align-items: stretch;
-        background-image: url(/images/circle216.png);
+        background-image: url(../images/circle216.png);
         width: 216px;
         height: 221px;
     }
@@ -422,7 +422,7 @@ footer p {
 
     .container-recom-2 {
         align-items: stretch;
-        background-image: url(/images/circle321.png);
+        background-image: url(../images/circle321.png);
         width: 320px;
         height: 341px;
     }
