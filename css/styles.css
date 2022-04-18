@@ -969,4 +969,111 @@ footer p {
         bottom:6%;
         left: 84%;
     }
+}/*-----------------------------------End Paper ----------------------------------*/
+
+/*"""""""""""""""""""""""""""Contact """""""""""""""""""""""""""""""""""""""*/
+.contact .container {
+    border: 2px solid #FF7A69;
+} 
+
+.contact .container form label {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 11px;
 }
+
+.contact .container form input {
+    background-color: #C2DFE3;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+#fname {
+    padding-left: 14px;
+    margin-bottom: 25px;
+}
+
+#lemail { 
+    padding-left: 14px;
+    margin-bottom: 25px;
+}
+
+#subject {
+    padding-left: 14px;
+    margin-bottom: 25px;
+}
+
+#message {
+    padding-left: 14px;
+    padding-top: 17px;
+    margin-bottom: 25px;
+}
+
+form .button {
+    width: 96px;
+    margin-bottom: 0;
+}
+
+@arrowColor: #ffcc00;
+@arrow: escape('@{arrowColor}'); 
+
+form select {
+    background-color:#1F99CD;
+    background-image: url("/images/expand_more_black_24dp.svg");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    border-radius:2px;
+    border:none;
+    padding: 10px 30px 10px 10px;
+    /* disable default appearance*/
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 302px;
+}
+
+select::-ms-expand {
+    display: none;
+  }
+
+
+form option {
+    font-size: 15px;
+    font-family: 'Urbanist', sans-serif;
+    color: #0D0D0D;
+    padding-right: 14px;
+    width: 302px;
+}
+
+
+::placeholder{
+    color: #0D0D0D;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#subject {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    background-color: #C2DFE3;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+}
+
+.contact .container form textarea {
+    border: 2px solid #C2DFE3;
+
+}
+
+/*"""""""""""""""""""""""""""End Contact """""""""""""""""""""""""""""""""""""""*/

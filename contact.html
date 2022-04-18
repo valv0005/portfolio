@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="wrapper">
+     <!--1. Header area-->
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <picture>
+                                <source srcset="images/logo--colour202x101.png"
+                                        media="(min-width: 1280px)" />
+                            
+                                <source srcset="images/logo--colour160x80.png"
+                                        media="(min-width: 768px)" />
+                            
+                                <source srcset="images/logo--colour160x80.png"
+                                        media="(min-width: 375px)" />
+                                <img class="orig-img"
+                                src="images/logo--colour202x101.png"
+                                alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                            <li class="item"><a href="index.html" class="home">Home</a></li>
+                            <li class="item"><a href="about.html" class="about">About</a></li>
+                            <li class="item"><a href="projects.html" class="services">Projects</a></li>
+                            <li class="item"><a href="#contact" class="contact">Contact</a></li>       
+                    </ul>
+                </nav>
+            </div>
+        </header><!--End 1. Header area-->
+        <main>
+           <section class="contact">
+               <h1>Contact</h1>
+               <div class="container">
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    
+                        <label for="lemail">Email</label>
+                        <input type="text" id="lemail" name="lastname" placeholder="Your email">
+                    
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="option0">How can I help you today?</option>
+                            <option value="option1">I would like to say hi</option>
+                            <option value="option2">I want to request my web contrast color evaluation</option>
+                            <option value="option3">I would like to hire you</option>
+                            <option value="option4">Other</option>
+                        </select>
+                    
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+                        <button type="submit" class="button" value="Submit" onclick="document.location='index.html'">Submit</button>
+                        <!-- <input type="submit" value="Submit"> -->
+                    </form>
+               </div>
+           </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <div class="footer-inner-left">
+                        <p>Copyright © 2022 Amalia Valverde </p>
+                    </div>
+                    <div class="footer-inner-right">
+                        <a href="#" class="social-text">LinkedIn</a>
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/107159_circle_linkedin_icon50px.png"
+                                            media="(min-width: 1280px)" />
+                                
+                                <source srcset="images/107159_circle_linkedin_icon44px.png"
+                                            media="(min-width: 768px)" />
+                                
+                                <source srcset="images/107159_circle_linkedin_icon44px.png"
+                                            media="(min-width: 375px)" />
+                                
+                                <img class="orig-img"
+                                src="images/107159_circle_linkedin_icon44px.png"
+                                alt="LinkedIn logo">
+                            </picture>
+                        </a>
+                        <a href="#" class="social-text">Behance</a>
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/104426_behance_portfolio_icon50px.png"
+                                            media="(min-width: 1280px)" />
+                                
+                                <source srcset="images/104426_behance_portfolio_icon44px.png"
+                                            media="(min-width: 768px)" />
+                                
+                                <source srcset="images/104426_behance_portfolio_icon44px.png"
+                                            media="(min-width: 375px)" />
+                            
+                                <img class="orig-img-b" src="images/104426_behance_portfolio_icon44px.png" alt="behance logo">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
