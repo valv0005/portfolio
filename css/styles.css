@@ -1015,7 +1015,7 @@ form .button {
 
 form select {
     background-color:#C2DFE3;
-    background-image: url(/images/expand_more_black_24dp.svg);
+    background-image: url(../images/expand_more_black_24dp.svg);
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: auto 50%;
