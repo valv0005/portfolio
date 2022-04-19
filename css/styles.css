@@ -149,6 +149,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
+    text-align: left;
 }
 
 .button {
@@ -765,6 +766,7 @@ footer p {
 
 .prototype .container .prototype-col .blue-block p {
     padding-bottom: 60px;
+    text-align: left;
 }
 
 .prototype .container .prototype-col .blue-block a {

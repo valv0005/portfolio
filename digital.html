@@ -42,72 +42,69 @@
             </div>
         </header><!--End 1. Header area-->
         <main>
-           <section class="projects">
-               <h1>Projects</h1>
+           <section class="paper">
+               <h1>Digital</h1>
                <div class="container">
-                   <div class="project-col">
-                       <a href="#">
-                            <div class="layer-0">
-                                    <h2>Design</h2>
-                            </div>
+                    <div class="w3-content w3-display-container">
+                        <div class="w3-display-container mySlides">
                             <picture>
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w540.jpg"
-                                            media="(min-width: 1280px)" />
-                                
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w351.jpg"
-                                            media="(min-width: 768px)" />
-                                
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w335.jpg"
-                                            media="(min-width: 375px)" />
-                                
-                                <img class="orig-img"
-                                        src="images/balazs-ketyi-_x335IZXxfc-unsplash_w540.jpg"
-                                        alt="Photo by balazs-ketyi on Unsplash">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="project-col">
-                        <a href="programming.html">
-                            <div class="layer">
-                                <h2>Programming</h2>
-                            </div>
-                            <picture>
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w540.jpg"
+                                <source srcset="images/high-fidelity_w1120x402.jpg"
                                         media="(min-width: 1280px)" />
                             
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w351.jpg"
+                                <source srcset="images/high-fidelity_w727x261.jpg"
                                         media="(min-width: 768px)" />
                             
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w335.jpg"
+                                <source srcset="images/high-fidelity_w335x250.jpg"
                                         media="(min-width: 375px)" />
-                            
                                 <img class="orig-img"
-                                    src="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w540.jpg"
-                                    alt="Photo by jeffrey-leung on Unsplash">
+                                src="images/high-fidelity.jpg"
+                                alt="Digital prototype">
                             </picture>
-                        </a>
-                    </div>
-                    <div class="project-col">
-                        <a href="prototype.html">
-                            <div class="layer">
-                                <h2>Prototype</h2>
-                            </div>
+                        </div>
+                        
+                        <div class="w3-display-container mySlides">
                             <picture>
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w540.jpg"
+                                <source srcset="images/tablet-digital_w1120x402.jpg"
                                         media="(min-width: 1280px)" />
                             
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w351.jpg"
+                                <source srcset="images/tablet-digital_w727x261.jpg"
                                         media="(min-width: 768px)" />
                             
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w335.jpg"
+                                <source srcset="images/tablet-digital_w335x250.jpg"
                                         media="(min-width: 375px)" />
-                            
                                 <img class="orig-img"
-                                    src="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w540.jpg"
-                                    alt="Photo by amelie-mourichon on Unsplash">
+                                src="images/tablet-digital.jpg"
+                                alt="Tablet Digital prototype">
                             </picture>
-                        </a>
+                        </div>
+                        <div class="button-circle">
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
                     </div>
+                    <p> Responsive website redesign (Adobe XD)
+                        Demonstrated ability to work through the creative process of a functional responsive website design. From the Creative brief to High-Fidelity Digital Prototype.
+                        <br>
+                        Redesigning a website is no easy task because you will start from scratch. The only way is to plan everything: typography, colours, imagery, and other elements. Also, you have to think about the users that will use that website.  </p>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                        
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+                        
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
                </div>
            </section>
         </main>

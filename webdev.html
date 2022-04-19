@@ -42,72 +42,69 @@
             </div>
         </header><!--End 1. Header area-->
         <main>
-           <section class="projects">
-               <h1>Projects</h1>
+           <section class="paper">
+               <h1>Single-page</h1>
                <div class="container">
-                   <div class="project-col">
-                       <a href="#">
-                            <div class="layer-0">
-                                    <h2>Design</h2>
-                            </div>
+                    <div class="w3-content w3-display-container">
+                        <div class="w3-display-container mySlides">
                             <picture>
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w540.jpg"
-                                            media="(min-width: 1280px)" />
-                                
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w351.jpg"
-                                            media="(min-width: 768px)" />
-                                
-                                <source srcset="images/balazs-ketyi-_x335IZXxfc-unsplash_w335.jpg"
-                                            media="(min-width: 375px)" />
-                                
-                                <img class="orig-img"
-                                        src="images/balazs-ketyi-_x335IZXxfc-unsplash_w540.jpg"
-                                        alt="Photo by balazs-ketyi on Unsplash">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="project-col">
-                        <a href="programming.html">
-                            <div class="layer">
-                                <h2>Programming</h2>
-                            </div>
-                            <picture>
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w540.jpg"
+                                <source srcset="images/code_w1120x402.png"
                                         media="(min-width: 1280px)" />
                             
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w351.jpg"
+                                <source srcset="images/code_w727x261.png"
                                         media="(min-width: 768px)" />
                             
-                                <source srcset="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w335.jpg"
+                                <source srcset="images/code_w335x250.png"
                                         media="(min-width: 375px)" />
-                            
                                 <img class="orig-img"
-                                    src="images/jeffrey-leung-NYcUkFJuxg0-unsplash_w540.jpg"
-                                    alt="Photo by jeffrey-leung on Unsplash">
+                                src="images/code.png"
+                                alt="Visual Studio index view">
                             </picture>
-                        </a>
-                    </div>
-                    <div class="project-col">
-                        <a href="prototype.html">
-                            <div class="layer">
-                                <h2>Prototype</h2>
-                            </div>
+                        </div>
+                        
+                        <div class="w3-display-container mySlides">
                             <picture>
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w540.jpg"
+                                <source srcset="images/home-singlepage_w1120x402.png"
                                         media="(min-width: 1280px)" />
                             
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w351.jpg"
+                                <source srcset="images/home-singlepage_w727x261.png"
                                         media="(min-width: 768px)" />
                             
-                                <source srcset="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w335.jpg"
+                                <source srcset="images/home-singlepage_w335x250.png"
                                         media="(min-width: 375px)" />
-                            
                                 <img class="orig-img"
-                                    src="images/amelie-mourichon-sv8oOQaUb-o-unsplash_w540.jpg"
-                                    alt="Photo by amelie-mourichon on Unsplash">
+                                src="images/home-singlepage.png"
+                                alt="Single page home">
                             </picture>
-                        </a>
+                        </div>
+                        <div class="button-circle">
+                        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
                     </div>
+                    <p> Single-page website based on Mobile and Desktop Mock up
+                        Used HTML semantics and standard tags; Styled HTML Page using media queries, grid, and flexbox CSS properties.
+                        
+                        For this project, it was important to replicate the mockup given. I used Visual Studio and then to pushed the file to a GitHub page. GitHub Link https://valv0005.github.io/final-project/ </p>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+                        
+                        function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                        }
+                        
+                        function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
                </div>
            </section>
         </main>
